@@ -13,13 +13,14 @@
       var api_key = '<%= @api_key %>';
       var api_secret = '<%= @api_secret %>';
       var session_id = '<%= @session_id %>';
-      console.log(api_key)
   </script>
-  <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body class="<%= @darkmode if @darkmode %>">
 <%= yield %>
 </body>
+
 </html>
