@@ -1,5 +1,7 @@
+require 'opentok'
 class VideoController < ApplicationController
-
+  skip_before_action :verify_authenticity_token
+  before_action :set_opentok_vars
   def set_opentok_vars
     @api_key = ENV['OPENTOK_API_KEY']
     @api_secret = ENV['OPENTOK_API_SECRET']
@@ -21,8 +23,10 @@ class VideoController < ApplicationController
 
   def name
     @name = name_params[:name]
+    puts("-------------------------------")
+    puts(@name)
     if name_params[:password] = 'hello'
-      redirect_to party_url(name: @name)
+      redirect_to videochat_url(name: @name)
     else
       redirect_to('/', flash: { error: 'Incorrect password' })
     end

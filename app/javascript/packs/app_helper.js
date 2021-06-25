@@ -16,7 +16,11 @@ export function  screenshareMode(session, mode){
 };
 
 export function setButtonDisplay(element){
-    element.style.display="block";
+    if (name == moderator_env_name) {
+        element.style.display = "block";
+    } else {
+        element.style.display = "none";
+    };
 };
 export function formatChatMsg(message) {
     return  `${name}: ${message}`

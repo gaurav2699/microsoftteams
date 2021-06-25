@@ -1,3 +1,3 @@
-import './app_helpers.js'
-import './opentok_video.js'
-import './opentok_screenshare.js'
+import './app_helper.js'
+import './vonage_video.js'
+import './vonage_screenshare.js'
