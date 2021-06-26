@@ -1,0 +1,43 @@
+@import "bulma";
+@import "functions";
+
+@import './custom.css';
+.btn{
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
+
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+.notification {
+    height: 10%;
+}
+
+.alert{
+  horiz-align: center;
+
+}
+.container{
+  height: 100%;
+}
+
+.notification:not(:last-child) {
+    margin-bottom: 0;
+}

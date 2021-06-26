@@ -1,5 +1,6 @@
 require 'opentok'
 class VideoController < ApplicationController
+  before_action :authenticate_user!
   skip_before_action :verify_authenticity_token
   before_action :set_opentok_vars
   def set_opentok_vars
@@ -22,7 +23,7 @@ class VideoController < ApplicationController
   end
 
   def name
-    @name = name_params[:name]
+    @name = current_user.name
     puts("-------------------------------")
     puts(@name)
     if name_params[:password] = 'hello'

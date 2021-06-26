@@ -1,3 +1,5 @@
+
+
 :root {
     --main: #343a40;
     --txt-alt: white;
@@ -189,6 +191,8 @@ header {
     flex: 1;
     display: flex;
     position: relative;
+    height: 100%;
+    top: 100%;
 }
 
 .subscriber.grid4 {
@@ -204,12 +208,14 @@ header {
 .subscriber,
 .screenshare {
     width: 100%;
-    height: 100%;
+    height: 440px;
     display: flex;
+    margin-top: 20px;
 }
 
 .publisher {
     position: absolute;
+    top: 340px;
     width: 25vmin;
     height: 25vmin;
     min-width: 8em;
@@ -234,7 +240,24 @@ header {
     --chat-theirs: violet;
     --txt: white;
 }
-
+.hero-body{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: blue;
+}
+.right{
+    margin-top: 0px;
+    float: right;
+}
+.left{
+    margin-top: 0px;
+    float: left;
+}
+#watch-mode{
+    color: black;
+    background-color: white;
+}
 @media screen and (min-aspect-ratio: 1 / 1) {
     .chat {
         width: 20%;
