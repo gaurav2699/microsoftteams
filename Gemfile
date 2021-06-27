@@ -38,6 +38,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'opentok'
 gem 'dotenv-rails'
 gem 'webpacker'
+gem 'devise'
+gem 'bulma-rails', '~> 0.6.1'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

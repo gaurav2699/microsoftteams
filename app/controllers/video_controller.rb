@@ -26,11 +26,8 @@ class VideoController < ApplicationController
     @name = current_user.name
     puts("-------------------------------")
     puts(@name)
-    if name_params[:password] = 'hello'
-      redirect_to videochat_url(name: @name)
-    else
-      redirect_to('/', flash: { error: 'Incorrect password' })
-    end
+    redirect_to videochat_url(name: @name)
+
   end
 
   def chat
