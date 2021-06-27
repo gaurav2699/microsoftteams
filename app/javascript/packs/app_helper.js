@@ -6,7 +6,7 @@ export function  screenshareMode(session, mode){
             data: 'on'
         });
     }
-    else if(mod == 'off'){
+    else if(mode == 'off'){
         window.location='/videochat?name='+name;
         session.signal({
             type: 'screenshare',

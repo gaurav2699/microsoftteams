@@ -26,7 +26,7 @@ if (window.location.pathname == '/screenshare') {
             // Listen for Signal screenshare message
             session.on('signal:screenshare', function screenshareCallback(event) {
                 if (event.data == 'off') {
-                    window.location = '/party?name=' + name;
+                    window.location = '/videochat?name=' + name;
                 };
             });
         }
