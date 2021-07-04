@@ -193,6 +193,7 @@ header {
     position: relative;
     height: 100%;
     top: 100%;
+    z-index: 0;
 }
 
 .subscriber.grid4 {
@@ -258,6 +259,24 @@ header {
     color: black;
     background-color: white;
 }
+.leave_button {
+    background-color: red;
+    border: none;
+    color: red;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0;
+    height: 100%;
+    margin-left: 35%;
+    text-decoration: none !important;
+}
+.leave-text{
+    color: white;
+}
+
+.button4 {border-radius: 12px;}
 @media screen and (min-aspect-ratio: 1 / 1) {
     .chat {
         width: 20%;

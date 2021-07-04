@@ -7,7 +7,7 @@ class VideoController < ApplicationController
     @api_key = ENV['OPENTOK_API_KEY']
     @api_secret = ENV['OPENTOK_API_SECRET']
     @session_id = Session.create_or_load_session
-    @moderator_name = ENV['MODERATOR_NAME']
+    @moderator_name = User.first.name
     @name ||= params[:name]
     @token = Session.create_token(@name, @moderator_name, @session_id)
   end

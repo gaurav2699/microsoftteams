@@ -17,7 +17,8 @@ export default class Party {
             return OT.initPublisher('publisher', {
                 insertMode: 'append',
                 width: "100%",
-                height: "100%"
+                height: "100%",
+                name: name
             }, function(error) {
                 if (error) {
                     console.error('Failed to initialise publisher', error);
