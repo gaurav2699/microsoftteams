@@ -1,13 +1,14 @@
 export function  screenshareMode(session, mode){
     if(mode == 'on'){
-        window.location = '/screenshare?name=' + name;
+        window.location = '/screenshare?session_id=' + session_id+'&type='+call_type;
         session.signal({
             type: 'screenshare',
             data: 'on'
         });
     }
     else if(mode == 'off'){
-        window.location='/videochat?name='+name;
+        console.log(call_type);
+        window.location='/videochat?type=' + call_type+'&token='+token+'&session_id='+session_id;
         session.signal({
             type: 'screenshare',
             data: 'off'

@@ -6,28 +6,45 @@ class VideoController < ApplicationController
   def set_opentok_vars
     @api_key = ENV['OPENTOK_API_KEY']
     @api_secret = ENV['OPENTOK_API_SECRET']
-    @session_id = Session.create_or_load_session
+    puts("------------------------")
+    puts(params[:type])
     @moderator_name = User.first.name
-    @name ||= params[:name]
-    @token = Session.create_token(@name, @moderator_name, @session_id)
+    @name=current_user.name
+
   end
 
   def landing
   end
 
   def index
+    @type = params[:type].to_s
+    @name = current_user.name
+    @session_id = params[:session_id].to_s
+    @token = params[:token].to_s
+    puts("-----------------over here------------")
+    puts(@session_id)
   end
 
   def screenshare
+    @type = params[:type].to_s
     @darkmode = 'dark'
+    @name = current_user.name
+    @session_id= params[:session_id]
+    @token = Session.create_token(@name, @moderator_name, @session_id)
   end
 
   def name
     @name = current_user.name
-    puts("-------------------------------")
-    puts(@name)
-    redirect_to videochat_url(name: @name)
+    @session_id = Session.first.session_id
+    @token = Session.create_token(@name, @moderator_name, @session_id)
+    redirect_to videochat_url(type: 0, token: @token, session_id: @session_id)
+  end
 
+  def private_call
+    @name = current_user.name
+    @session_id = Session.create_or_load_private_session
+    @token = Session.create_token(@name, @moderator_name, @session_id)
+    redirect_to videochat_url(type: 1, token: @token, session_id: @session_id)
   end
 
   def chat

@@ -18,6 +18,9 @@ class Session < ApplicationRecord
       @session_id = create_new_session
     end
   end
+  def self.create_or_load_private_session
+    @session_id = create_new_session
+  end
 
   def self.create_new_session
     session = @opentok.create_session
@@ -29,6 +32,8 @@ class Session < ApplicationRecord
   end
 
   def self.create_token(user_name, moderator_name, session_id)
+    puts("---------------here---------------")
+    puts(@session_id)
     @token = user_name == moderator_name ? @opentok.generate_token(session_id, {role: :moderator}) : @opentok.generate_token(session_id)
   end
 end

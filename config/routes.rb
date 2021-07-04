@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get '/screenshare', to: 'video#screenshare'
   post '/name', to: 'video#name'
   post '/chat/send', to: 'video#chat'
+  get '/private_call', to: 'video#private_call'
 end
