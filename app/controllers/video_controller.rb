@@ -14,6 +14,7 @@ class VideoController < ApplicationController
   end
 
   def landing
+    @sessions = Session.all
   end
 
   def index
@@ -35,7 +36,7 @@ class VideoController < ApplicationController
 
   def name
     @name = current_user.name
-    @session_id = Session.first.session_id
+    @session_id = params[:session_id]
     @token = Session.create_token(@name, @moderator_name, @session_id)
     redirect_to videochat_url(type: 0, token: @token, session_id: @session_id)
   end
