@@ -3,6 +3,7 @@
     <h1><%= @welcome_message %></h1>
       <% @sessions.each do |session| %>
         <%= button_to "Join Room #{session.id}", {:controller => "video", :action => "name", :session_id => session.session_id} , :method=>:post  %>
-        <% end %>
+      <%= button_to "Chat", {:controller => "video", :action => "roomchat", :id => session.id} , :method=>:get  %>
+  <% end %>
   </div>
 </main>

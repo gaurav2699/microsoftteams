@@ -51,6 +51,12 @@ class VideoController < ApplicationController
   def chat
   end
 
+  def roomchat
+    @session = Session.find(params[:id]) if params[:id]
+    @room_message = RoomMessage.new session: @session
+    @room_messages = @session.room_messages.includes(:user)
+  end
+
   private
   def name_params
     params.permit(:name, :password, :authenticity_token, :commit)

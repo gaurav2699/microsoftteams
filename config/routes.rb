@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :room_messages
   devise_for :users, controllers: {
     registrations: 'registrations'
   }
@@ -8,5 +9,6 @@ Rails.application.routes.draw do
   get '/screenshare', to: 'video#screenshare'
   post '/name', to: 'video#name'
   post '/chat/send', to: 'video#chat'
+  get '/roomchat/:id', to: 'video#roomchat'
   get '/private_call', to: 'video#private_call'
 end

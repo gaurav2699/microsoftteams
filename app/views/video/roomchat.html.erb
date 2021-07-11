@@ -1,0 +1,45 @@
+
+
+<div class="row">
+
+  <div class="col">
+    <div class="roomchat">
+      <% @room_messages.each do |room_message| %>
+        <div class="chat-message-container">
+          <div class="row no-gutters">
+
+
+            <div class="col">
+              <div class="message-content">
+                <p class="mb-1">
+                  <div class = "sendername">
+                  <%= room_message.user.name %>
+                  </div>:
+                  <%= room_message.message %>
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <%= simple_form_for @room_message, remote: true do |form| %>
+      <div class="input-group mb-3">
+        <%= form.input :message, as: :string,
+                       wrapper: false,
+                       label: false,
+                       input_html: {
+                         class: 'roomchat-input'
+                       } %>
+        <div class="input-group-append">
+          <%= form.submit "Send", class: 'btn btn-primary chat-input' %>
+        </div>
+      </div>
+
+      <%#= form.input :session_id, as: :hidden %>
+    <% end %>
+  </div>
+</div>

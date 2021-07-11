@@ -1,7 +1,10 @@
 @import "bulma";
 @import "functions";
 
+
 @import './custom.css';
+
+
 .btn{
     background-color: DodgerBlue;
     border: none;
@@ -42,4 +45,30 @@ hr {
 }
 a {
   text-decoration: none;
+}
+
+.input-group{
+  top: 40px;
+  margin: 40px;
+  width: 100%;
+}
+
+.input-group-append{
+  position: relative;
+  left: 50%;
+}
+.roomchat-input{
+  width: 100%;
+}
+
+.roomchat{
+  position: relative;
+  left: 50%;
+}
+.sendername{
+  color: red;
+  float:left;
+}
+.message-content{
+  left: 0px;
 }

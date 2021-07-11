@@ -1,6 +1,8 @@
 require 'opentok'
 
 class Session < ApplicationRecord
+  has_many :room_messages, dependent: :destroy, inverse_of: :session
+
   @opentok = OpenTok::OpenTok.new ENV['OPENTOK_API_KEY'], ENV['OPENTOK_API_SECRET']
 
   def self.create_or_load_session
