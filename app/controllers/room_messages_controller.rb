@@ -8,6 +8,7 @@ class RoomMessagesController < ApplicationController
     @room_message = RoomMessage.create user: current_user,
                                        session: @room,
                                        message: params.dig(:room_message, :message)
+    redirect_to('/roomchat/' + @room.id.to_s+'?')
   end
 
 
