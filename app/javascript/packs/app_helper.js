@@ -1,6 +1,6 @@
 export function  screenshareMode(session, mode){
     if(mode == 'on'){
-        window.location = '/screenshare?session_id=' + session_id+'&type='+call_type;
+        window.location = '/screenshare?session_id=' + session_id+'&type='+0;
         session.signal({
             type: 'screenshare',
             data: 'on'
@@ -17,11 +17,9 @@ export function  screenshareMode(session, mode){
 };
 
 export function setButtonDisplay(element){
-    if (name == moderator_env_name) {
+
         element.style.display = "block";
-    } else {
-        element.style.display = "none";
-    };
+
 };
 export function formatChatMsg(message) {
     return  `${name}: ${message}`

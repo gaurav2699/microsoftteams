@@ -6,9 +6,6 @@ class VideoController < ApplicationController
   def set_opentok_vars
     @api_key = ENV['OPENTOK_API_KEY']
     @api_secret = ENV['OPENTOK_API_SECRET']
-    puts("------------------------")
-    puts(params[:type])
-    @moderator_name = User.first.name
     @name=current_user.name
 
   end

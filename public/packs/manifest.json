@@ -1,33 +1,33 @@
 {
-  "app_helper.js": "/packs/js/app_helper-21321338ef43345f3c1b.js",
-  "app_helper.js.map": "/packs/js/app_helper-21321338ef43345f3c1b.js.map",
-  "application.js": "/packs/js/application-e2b3818d259d4fc0d9d2.js",
-  "application.js.map": "/packs/js/application-e2b3818d259d4fc0d9d2.js.map",
-  "chat.js": "/packs/js/chat-65cff6bb1c9ee7fa7a7a.js",
-  "chat.js.map": "/packs/js/chat-65cff6bb1c9ee7fa7a7a.js.map",
+  "app_helper.js": "/packs/js/app_helper-6895b20dcc9f6463f7cb.js",
+  "app_helper.js.map": "/packs/js/app_helper-6895b20dcc9f6463f7cb.js.map",
+  "application.js": "/packs/js/application-31f3a8af1c9c97d1dcdd.js",
+  "application.js.map": "/packs/js/application-31f3a8af1c9c97d1dcdd.js.map",
+  "chat.js": "/packs/js/chat-81cff227f7feec69a61e.js",
+  "chat.js.map": "/packs/js/chat-81cff227f7feec69a61e.js.map",
   "entrypoints": {
     "app_helper": {
       "js": [
-        "/packs/js/app_helper-21321338ef43345f3c1b.js"
+        "/packs/js/app_helper-6895b20dcc9f6463f7cb.js"
       ],
       "js.map": [
-        "/packs/js/app_helper-21321338ef43345f3c1b.js.map"
+        "/packs/js/app_helper-6895b20dcc9f6463f7cb.js.map"
       ]
     },
     "application": {
       "js": [
-        "/packs/js/application-e2b3818d259d4fc0d9d2.js"
+        "/packs/js/application-31f3a8af1c9c97d1dcdd.js"
       ],
       "js.map": [
-        "/packs/js/application-e2b3818d259d4fc0d9d2.js.map"
+        "/packs/js/application-31f3a8af1c9c97d1dcdd.js.map"
       ]
     },
     "chat": {
       "js": [
-        "/packs/js/chat-65cff6bb1c9ee7fa7a7a.js"
+        "/packs/js/chat-81cff227f7feec69a61e.js"
       ],
       "js.map": [
-        "/packs/js/chat-65cff6bb1c9ee7fa7a7a.js.map"
+        "/packs/js/chat-81cff227f7feec69a61e.js.map"
       ]
     },
     "hello_react": {
@@ -40,45 +40,45 @@
     },
     "screenshare": {
       "js": [
-        "/packs/js/screenshare-c011125d33f2b1f0822d.js"
+        "/packs/js/screenshare-20825595b0c73ad819c0.js"
       ],
       "js.map": [
-        "/packs/js/screenshare-c011125d33f2b1f0822d.js.map"
+        "/packs/js/screenshare-20825595b0c73ad819c0.js.map"
       ]
     },
     "videochat": {
       "js": [
-        "/packs/js/videochat-1625a435209bcf11dda9.js"
+        "/packs/js/videochat-83cb92046d1c8b4ead43.js"
       ],
       "js.map": [
-        "/packs/js/videochat-1625a435209bcf11dda9.js.map"
+        "/packs/js/videochat-83cb92046d1c8b4ead43.js.map"
       ]
     },
     "vonage_screenshare": {
       "js": [
-        "/packs/js/vonage_screenshare-09a292e29a04fb46b9fb.js"
+        "/packs/js/vonage_screenshare-05de589cfc17abf89f64.js"
       ],
       "js.map": [
-        "/packs/js/vonage_screenshare-09a292e29a04fb46b9fb.js.map"
+        "/packs/js/vonage_screenshare-05de589cfc17abf89f64.js.map"
       ]
     },
     "vonage_video": {
       "js": [
-        "/packs/js/vonage_video-9cf003e18dc04e27f60b.js"
+        "/packs/js/vonage_video-1f5d67ea74422d969128.js"
       ],
       "js.map": [
-        "/packs/js/vonage_video-9cf003e18dc04e27f60b.js.map"
+        "/packs/js/vonage_video-1f5d67ea74422d969128.js.map"
       ]
     }
   },
   "hello_react.js": "/packs/js/hello_react-a8da401173785cc0035f.js",
   "hello_react.js.map": "/packs/js/hello_react-a8da401173785cc0035f.js.map",
-  "screenshare.js": "/packs/js/screenshare-c011125d33f2b1f0822d.js",
-  "screenshare.js.map": "/packs/js/screenshare-c011125d33f2b1f0822d.js.map",
-  "videochat.js": "/packs/js/videochat-1625a435209bcf11dda9.js",
-  "videochat.js.map": "/packs/js/videochat-1625a435209bcf11dda9.js.map",
-  "vonage_screenshare.js": "/packs/js/vonage_screenshare-09a292e29a04fb46b9fb.js",
-  "vonage_screenshare.js.map": "/packs/js/vonage_screenshare-09a292e29a04fb46b9fb.js.map",
-  "vonage_video.js": "/packs/js/vonage_video-9cf003e18dc04e27f60b.js",
-  "vonage_video.js.map": "/packs/js/vonage_video-9cf003e18dc04e27f60b.js.map"
+  "screenshare.js": "/packs/js/screenshare-20825595b0c73ad819c0.js",
+  "screenshare.js.map": "/packs/js/screenshare-20825595b0c73ad819c0.js.map",
+  "videochat.js": "/packs/js/videochat-83cb92046d1c8b4ead43.js",
+  "videochat.js.map": "/packs/js/videochat-83cb92046d1c8b4ead43.js.map",
+  "vonage_screenshare.js": "/packs/js/vonage_screenshare-05de589cfc17abf89f64.js",
+  "vonage_screenshare.js.map": "/packs/js/vonage_screenshare-05de589cfc17abf89f64.js.map",
+  "vonage_video.js": "/packs/js/vonage_video-1f5d67ea74422d969128.js",
+  "vonage_video.js.map": "/packs/js/vonage_video-1f5d67ea74422d969128.js.map"
 }

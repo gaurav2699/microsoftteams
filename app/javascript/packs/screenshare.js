@@ -8,7 +8,12 @@ export default class Screenshare{
         this.clickStatus = 'on';
     }
     toggle(){
-        if (this.name === moderator_env_name) {
+        const queryString = window.location.search;
+        console.log(queryString);
+        const urlParams = new URLSearchParams(queryString);
+        const type = urlParams.get('type')
+        console.log(type);
+        if (type == 0) {
             this.shareScreen();
         } else {
             this.subscribe();
