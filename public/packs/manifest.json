@@ -1,8 +1,8 @@
 {
   "app_helper.js": "/packs/js/app_helper-8ec5ef1cdd192e8ddfab.js",
   "app_helper.js.map": "/packs/js/app_helper-8ec5ef1cdd192e8ddfab.js.map",
-  "application.js": "/packs/js/application-700ef06304ff06b7974f.js",
-  "application.js.map": "/packs/js/application-700ef06304ff06b7974f.js.map",
+  "application.js": "/packs/js/application-d00f5d19b6716d0466b3.js",
+  "application.js.map": "/packs/js/application-d00f5d19b6716d0466b3.js.map",
   "chat.js": "/packs/js/chat-2dd7703959bcac494859.js",
   "chat.js.map": "/packs/js/chat-2dd7703959bcac494859.js.map",
   "entrypoints": {
@@ -16,10 +16,10 @@
     },
     "application": {
       "js": [
-        "/packs/js/application-700ef06304ff06b7974f.js"
+        "/packs/js/application-d00f5d19b6716d0466b3.js"
       ],
       "js.map": [
-        "/packs/js/application-700ef06304ff06b7974f.js.map"
+        "/packs/js/application-d00f5d19b6716d0466b3.js.map"
       ]
     },
     "chat": {
@@ -64,10 +64,10 @@
     },
     "vonage_video": {
       "js": [
-        "/packs/js/vonage_video-4be2e6d2fa293a925df4.js"
+        "/packs/js/vonage_video-a1899f7361515df7ef3b.js"
       ],
       "js.map": [
-        "/packs/js/vonage_video-4be2e6d2fa293a925df4.js.map"
+        "/packs/js/vonage_video-a1899f7361515df7ef3b.js.map"
       ]
     }
   },
@@ -79,6 +79,6 @@
   "videochat.js.map": "/packs/js/videochat-7dd24ba7a157c5d265bc.js.map",
   "vonage_screenshare.js": "/packs/js/vonage_screenshare-ee4e46f3db287b5536b0.js",
   "vonage_screenshare.js.map": "/packs/js/vonage_screenshare-ee4e46f3db287b5536b0.js.map",
-  "vonage_video.js": "/packs/js/vonage_video-4be2e6d2fa293a925df4.js",
-  "vonage_video.js.map": "/packs/js/vonage_video-4be2e6d2fa293a925df4.js.map"
+  "vonage_video.js": "/packs/js/vonage_video-a1899f7361515df7ef3b.js",
+  "vonage_video.js.map": "/packs/js/vonage_video-a1899f7361515df7ef3b.js.map"
 }
