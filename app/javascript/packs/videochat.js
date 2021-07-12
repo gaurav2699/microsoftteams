@@ -63,6 +63,7 @@ export default class Party {
                 event.preventDefault();
                 if (self.clickStatus == 'off') {
                     // Go to screenshare view
+                    window.location = '/screenshare?session_id=' + session_id+'&type='+'0';
                     screenshareMode(self.session, 'on');
                 };
             });
