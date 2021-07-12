@@ -1,10 +1,11 @@
 export function  screenshareMode(session, mode){
     if(mode == 'on'){
-        window.location = '/screenshare?session_id=' + session_id+'&type=0';
-        session.signal({
-            type: 'screenshare',
-            data: 'on'
-        });
+            session.signal({
+                type: 'screenshare',
+                data: 'on'
+            });
+
+
     }
     else if(mode == 'off'){
         console.log(call_type);

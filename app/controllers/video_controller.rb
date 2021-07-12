@@ -19,7 +19,6 @@ class VideoController < ApplicationController
     @name = current_user.name
     @session_id = params[:session_id].to_s
     @token = params[:token].to_s
-    puts("-----------------over here------------")
     puts(@session_id)
   end
 
@@ -59,6 +58,8 @@ class VideoController < ApplicationController
     @session.update(expired: true)
     redirect_to root_path
   end
+
+
 
   private
   def name_params
