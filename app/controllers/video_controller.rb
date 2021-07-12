@@ -11,7 +11,7 @@ class VideoController < ApplicationController
   end
 
   def landing
-    @sessions = Session.all
+    @sessions = Session.all.where(:expired => false)
   end
 
   def index
@@ -28,20 +28,20 @@ class VideoController < ApplicationController
     @darkmode = 'dark'
     @name = current_user.name
     @session_id= params[:session_id]
-    @token = Session.create_token(@name, @moderator_name, @session_id)
+    @token = Session.create_token(@name, @session_id)
   end
 
   def name
     @name = current_user.name
     @session_id = params[:session_id]
-    @token = Session.create_token(@name, @moderator_name, @session_id)
+    @token = Session.create_token(@name, @session_id)
     redirect_to videochat_url(type: 0, token: @token, session_id: @session_id)
   end
 
   def private_call
     @name = current_user.name
     @session_id = Session.create_or_load_private_session
-    @token = Session.create_token(@name, @moderator_name, @session_id)
+    @token = Session.create_token(@name, @session_id)
     redirect_to videochat_url(type: 1, token: @token, session_id: @session_id)
   end
 
@@ -52,6 +52,12 @@ class VideoController < ApplicationController
     @session = Session.find(params[:id]) if params[:id]
     @room_message = RoomMessage.new session: @session
     @room_messages = @session.room_messages.includes(:user)
+  end
+
+  def endmeet
+    @session = Session.find(params[:id])
+    @session.update(expired: true)
+    redirect_to root_path
   end
 
   private

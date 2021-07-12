@@ -2,7 +2,7 @@ require 'opentok'
 
 class Session < ApplicationRecord
   has_many :room_messages, dependent: :destroy, inverse_of: :session
-
+  belongs_to :user
   @opentok = OpenTok::OpenTok.new ENV['OPENTOK_API_KEY'], ENV['OPENTOK_API_SECRET']
 
   def self.create_or_load_session
@@ -33,8 +33,9 @@ class Session < ApplicationRecord
     @session_id
   end
 
-  def self.create_token(user_name, moderator_name, session_id)
+  def self.create_token(user_name, session_id)
     puts("---------------here---------------")
+    moderator_name=User.first.name
     puts(@session_id)
     @token = user_name == moderator_name ? @opentok.generate_token(session_id, {role: :moderator}) : @opentok.generate_token(session_id)
   end
