@@ -63,12 +63,17 @@ a {
 
 .roomchat{
   position: relative;
-  left: 50%;
+  left: 0%;
 }
 .sendername{
   color: red;
   float:left;
 }
+.currentusername{
+  color: blue;
+  float:left;
+}
+
 .message-content{
   left: 0px;
 }
@@ -84,4 +89,14 @@ a {
   height: 100%;
   margin-left: 15%;
   text-decoration: none !important;
+}
+
+.video_button{
+  float: left;
+  margin: 10px;
+}
+
+.chat_button{
+  float: right;
+  margin: 10px;
 }

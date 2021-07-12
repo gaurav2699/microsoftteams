@@ -2,8 +2,8 @@
   <div class="landing">
     <h1><%= @welcome_message %></h1>
       <% @sessions.each do |session| %>
-        <%= button_to "Join Room #{session.id}", {:controller => "video", :action => "name", :session_id => session.session_id} , :method=>:post  %>
-      <%= button_to "Chat", {:controller => "video", :action => "roomchat", :id => session.id} , :method=>:get  %>
+      <div class ="video_button"> <%= button_to "Join Room #{session.id}", {:controller => "video", :action => "name", :session_id => session.session_id} , :method=>:post  %></div>
+      <div class ="chat_button"><%= button_to "Chat", {:controller => "video", :action => "roomchat", :id => session.id} , :method=>:get  %></div> <br>
   <% end %>
   </div>
 </main>

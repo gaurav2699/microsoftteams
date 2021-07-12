@@ -12,9 +12,16 @@
             <div class="col">
               <div class="message-content">
                 <p class="mb-1">
+                <% if current_user.id == room_message.user.id %>
+                  <div class = "currentusername">
+                  <%= room_message.user.name %> :
+                  </div>
+                  <% else %>
                   <div class = "sendername">
-                  <%= room_message.user.name %>
-                  </div>:
+                    <%= room_message.user.name %>:
+                  </div>
+                  <% end %>
+                &nbsp;
                   <%= room_message.message %>
                 </p>
 
