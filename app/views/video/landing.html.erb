@@ -2,11 +2,16 @@
   <div class="landing">
     <h1><%= @welcome_message %></h1>
       <% @sessions.each do |session| %>
-      <div class ="video_button"> <%= button_to "Join Room #{session.id}", {:controller => "video", :action => "name", :session_id => session.session_id} , :method=>:post  %></div>
-      <div class ="chat_button"><%= button_to "Chat", {:controller => "video", :action => "roomchat", :id => session.id} , :method=>:get  %></div> <br>
+      <div id="outer">
+      <div class ="inner"> <%= button_to "Join Room #{session.id}", {:controller => "video", :action => "name", :session_id => session.session_id} , :method=>:post  %></div>
+      <div class ="inner"><%= button_to "Chat", {:controller => "video", :action => "roomchat", :id => session.id} , :method=>:get  %></div>
+
       <% if session&.user&.id == current_user.id %>
-        <div class ="chat_button"><%= button_to "End Meet", {:controller => "video", :action => "endmeet", :id => session.id} , :method=>:get  %></div> <br>
+        <div class ="inner"><%= button_to "End Meet", {:controller => "video", :action => "endmeet", :id => session.id} , :method=>:get, class: "endmeet"  %></div> <br>
+        <% else %>
+        <br>
   <% end %>
+      </div>
   <% end %>
   </div>
 </main>

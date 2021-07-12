@@ -40,7 +40,7 @@ class VideoController < ApplicationController
 
   def private_call
     @name = current_user.name
-    @session_id = Session.create_or_load_private_session
+    @session_id = Session.create_or_load_private_session(current_user)
     @token = Session.create_token(@name, @session_id)
     redirect_to videochat_url(type: 1, token: @token, session_id: @session_id)
   end

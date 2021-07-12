@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   post '/name', to: 'video#name'
   post '/chat/send', to: 'video#chat'
   get '/roomchat/:id', to: 'video#roomchat'
+  get '/endmeet/:id', to: 'video#endmeet'
   get '/private_call', to: 'video#private_call'
 end

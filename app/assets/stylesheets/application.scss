@@ -4,7 +4,9 @@
 
 @import 'custom';
 
-
+.endmeet{
+  background-color: red!important;
+}
 .btn{
     background-color: DodgerBlue;
     border: none;
@@ -91,12 +93,13 @@ a {
   text-decoration: none !important;
 }
 
-.video_button{
-  float: left;
-  margin: 10px;
+#outer
+{
+  width:100%;
+  text-align: center;
+}
+.inner
+{
+  display: inline-block;
 }
 
-.chat_button{
-  float: right;
-  margin: 10px;
-}

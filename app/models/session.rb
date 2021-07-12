@@ -20,14 +20,16 @@ class Session < ApplicationRecord
       @session_id = create_new_session
     end
   end
-  def self.create_or_load_private_session
-    @session_id = create_new_session
+
+  def self.create_or_load_private_session(current_user)
+    @session_id = create_new_session(current_user)
   end
 
-  def self.create_new_session
+  def self.create_new_session(current_user)
     session = @opentok.create_session
     record = Session.new
     record.session_id = session.session_id
+    record.user = current_user
     record.save
     @session_id = session.session_id
     @session_id
