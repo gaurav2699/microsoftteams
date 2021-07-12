@@ -13,7 +13,7 @@ export default class Screenshare{
         const urlParams = new URLSearchParams(queryString);
         const type = urlParams.get('type')
         console.log(type);
-        if (type == 0) {
+        if (type == '0') {
             this.shareScreen();
         } else {
             this.subscribe();

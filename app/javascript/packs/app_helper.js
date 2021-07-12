@@ -1,6 +1,6 @@
 export function  screenshareMode(session, mode){
     if(mode == 'on'){
-        window.location = '/screenshare?session_id=' + session_id+'&type='+0;
+        window.location = '/screenshare?session_id=' + session_id+'&type='+'0';
         session.signal({
             type: 'screenshare',
             data: 'on'
