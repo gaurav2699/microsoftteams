@@ -40,10 +40,11 @@ This Application is a Microsoft Teams clone. It is made using RubyonRails and Po
 # Complete steps to run the project
 1. First clone the repository to your desired location
 2. Go to config/database.yml and change the username and password to your respective PostgreSQL username and password
-3. Install webpacker (sudo apt-get install imagemagick)
 4. Run the following commands in you teminal:
 ```
 bundle install
+rails webpacker:install
+rails webpacker:install:react
 rake db:create
 rake db:migrate
 rails server
