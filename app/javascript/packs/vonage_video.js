@@ -1,5 +1,6 @@
 import Chat from './chat.js'
 import Party from './videochat.js'
+import Screenshare from "./screenshare";
 
 // declare empty global session variable
 var session = ''
@@ -28,7 +29,7 @@ if (window.location.pathname == '/videochat') {
             // Listen for Signal screenshare message
             session.on('signal:screenshare', function screenshareCallback(event) {
                 if (event.data == 'on' && window.location.pathname == '/videochat') {
-                    window.location = '/screenshare?session_id=' + session_id+'&type=1';
+                    // window.location = '/screenshare?session_id=' + session_id+'&type=1';
                 };
             });
         };
