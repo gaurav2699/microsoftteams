@@ -1,8 +1,8 @@
 # Microsoft Teams Clone
 
 This Application is a Microsoft Teams clone. It is made using RubyonRails and Postgresql. Vonage Video API was used for video services. There are three models: sessions, users and roommessages. 
-Hosted URL: https://sheltered-forest-05404.herokuapp.com/
-Demo Video Link: https://www.youtube.com/watch?v=_kRCUtKarbI
+- Hosted URL: https://sheltered-forest-05404.herokuapp.com/
+- Demo Video Link: https://www.youtube.com/watch?v=_kRCUtKarbI
 
 
 ## Features Implemented:
