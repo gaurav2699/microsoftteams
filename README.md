@@ -33,7 +33,7 @@ This Application is a Microsoft Teams clone. It is made using RubyonRails and Po
 - User must enter name, email and password to sign up.
 - Users can update their details from the account section in the navbar.
 - User authentication was done using ‘devise’ gem.
-</hr>
+<hr>
 Ruby Version: ruby 2.6.1
 # Necessary installation steps
 - To install Ruby on Rails, go through the following document
