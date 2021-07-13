@@ -34,15 +34,13 @@ This Application is a Microsoft Teams clone. It is made using RubyonRails and Po
 - Users can update their details from the account section in the navbar.
 - User authentication was done using ‘devise’ gem.
 <hr>
-Ruby Version: ruby 2.6.1
 # Necessary installation steps
 - To install Ruby on Rails, go through the following document
   https://docs.google.com/document/d/1jW8vD1ziBLZ-ClZ4tpp7PPxH3obzI3Vk3LCAEBQkzkk/edit?usp=sharing
-
 # Complete steps to run the project
 1. First clone the repository to your desired location
-2. Go to config/database.yml and change the username and password to your respective MySQL username and password
-3. Install imagemagick (sudo apt-get install imagemagick)
+2. Go to config/database.yml and change the username and password to your respective PostgreSQL username and password
+3. Install webpacker (sudo apt-get install imagemagick)
 4. Run the following commands in you teminal:
 ```
 bundle install
